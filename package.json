@@ -8,7 +8,7 @@
     },
     "scripts": {
         "test": "node test/news.test.js | tap-spec",
-        "watch": "nodemon src/app.js"
+        "watch": "nodemon src/index.js"
     },
     "repository": {
         "type": "git",
