@@ -1,36 +1,36 @@
 {
-  "name": "Know-More",
-  "version": "1.0.0",
-  "description": "website to search about any News you want",
-  "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/GSG-G7/Know-More.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/GSG-G7/Know-More/issues"
-  },
-  "homepage": "https://github.com/GSG-G7/Know-More#readme",
-  "dependencies": {
-    "express": "^4.17.1"
-  },
-  "devDependencies": {
-    "eslint": "^5.16.0",
-    "eslint-config-airbnb-base": "^13.2.0",
-    "eslint-config-node": "^4.0.0",
-    "eslint-plugin-import": "^2.18.2",
-    "nodemon": "^1.19.1",
-    "supertest": "^4.0.2",
-    "tap-spec": "^5.0.0",
-    "tape": "^4.11.0"
-  }
+    "name": "Know-More",
+    "version": "1.0.0",
+    "description": "website to search about any News you want",
+    "main": "index.js",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "test": "node test/news.test.js | tap-spec"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/GSG-G7/Know-More.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/GSG-G7/Know-More/issues"
+    },
+    "homepage": "https://github.com/GSG-G7/Know-More#readme",
+    "dependencies": {
+        "express": "^4.17.1"
+    },
+    "devDependencies": {
+        "eslint": "^5.16.0",
+        "eslint-config-airbnb-base": "^13.2.0",
+        "eslint-config-node": "^4.0.0",
+        "eslint-plugin-import": "^2.18.2",
+        "nodemon": "^1.19.1",
+        "supertest": "^4.0.2",
+        "tap-spec": "^5.0.0",
+        "tape": "^4.11.0"
+    }
 }
