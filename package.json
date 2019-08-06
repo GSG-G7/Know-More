@@ -7,7 +7,8 @@
         "test": "test"
     },
     "scripts": {
-        "test": "node test/news.test.js | tap-spec"
+        "test": "node test/news.test.js | tap-spec",
+        "watch": "nodemon src/app.js"
     },
     "repository": {
         "type": "git",
@@ -21,7 +22,8 @@
     },
     "homepage": "https://github.com/GSG-G7/Know-More#readme",
     "dependencies": {
-        "express": "^4.17.1"
+        "express": "^4.17.1",
+        "express-handlebars": "^3.1.0"
     },
     "devDependencies": {
         "eslint": "^5.16.0",
