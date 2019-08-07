@@ -1,4 +1,5 @@
 const express = require('express');
+const request = require('./request');
 
 const router = express.Router();
 
@@ -8,9 +9,7 @@ router.get('/', (req, res) => {
   });
 });
 
-router.post('/search', (req, res) => {
-  res.json({ nnn: 'ddd' });
-});
+router.post('/search', request.fetchData);
 
 
 module.exports = router;
