@@ -6,14 +6,12 @@ const exphs = require('express-handlebars');
 
 const routes = require('./routes/index');
 
-const helpers = require('./views/helpers/index');
-
 const PORT = process.env.PORT || 5000;
 
 const app = express();
 app.set('port', PORT);
 app.use(express.json());
-app.use(express.urlencoded({ extended:false }));
+app.use(express.urlencoded({ extended: false }));
 
 app.use(express.static(path.join(__dirname, '..', 'public')));
 app.set('views', path.join(__dirname, 'views'));
@@ -26,7 +24,6 @@ app.engine(
     layoutsDir: path.join(__dirname, 'views', 'layouts'),
     partialsDir: path.join(__dirname, 'views', 'partials'),
     defaultLayout: 'main',
-    helpers,
   }),
 );
 

@@ -6,15 +6,15 @@
 </form>
 
 {{#each result}}
-<ul>
+
 <div>
   <h4>{{this.title}}</h4>
   <p>{{this.description}}</p>
   <p>{{this.publishedAt}}</p>
   <div><img src="{{this.urlToImage}}" alt="new" ></div>
   <div><a href="{{this.url}}">Read more</a></div>
-</div>  
-</ul>
+</div> 
+ 
 {{/each}}
 
 
