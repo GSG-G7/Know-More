@@ -23,8 +23,10 @@
     },
     "homepage": "https://github.com/GSG-G7/Know-More#readme",
     "dependencies": {
+        "dotenv": "^8.0.0",
         "express": "^4.17.1",
-        "express-handlebars": "^3.1.0"
+        "express-handlebars": "^3.1.0",
+        "node-fetch": "^2.6.0"
     },
     "devDependencies": {
         "eslint": "^5.16.0",
