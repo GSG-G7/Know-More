@@ -15,5 +15,9 @@ exports.fetchData = (req, res) => {
         result: data.articles,
       });
     })
-    .catch(err => console.log(err));
+    .catch((e) => {
+      res.status(500).render('500', {
+        result: 'data.articles',
+      });
+    });
 };

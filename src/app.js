@@ -17,6 +17,8 @@ app.use(express.static(path.join(__dirname, '..', 'public')));
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 app.use(routes);
+app.use(require('../src/routes/error').client);
+app.use(require('../src/routes/servererror'));
 app.engine(
   'hbs',
   exphs({
