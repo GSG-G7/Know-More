@@ -4,12 +4,16 @@ require('dotenv').config();
 const apiKey = process.env.API_KEY;
 
 exports.fetchData = (req, res) => {
-  // console.log(req.body.query);
-  const search = req.body.name;
+  // console.log(req.body);
+  const search = req.body.query;
   const url = `https://newsapi.org/v2/everything?q=${search}&apiKey=${apiKey}`;
 
   fetch(url)
     .then(response => response.json())
-    .then(data => res.json(data))
+    .then((data) => {
+      res.render('home', {
+        result: data.articles,
+      });
+    })
     .catch(err => console.log(err));
 };
