@@ -8,5 +8,9 @@ router.get('/', (req, res) => {
   });
 });
 
+router.post('/search', (req, res) => {
+  res.json({ nnn: 'ddd' });
+});
+
 
 module.exports = router;
