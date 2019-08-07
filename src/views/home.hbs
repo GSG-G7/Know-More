@@ -1,20 +1,20 @@
 {{> header }}
-<form class= "search" action="/search" method="POST"> 
-  <label>Search For A new </label>
+<form class= "search__form" action="/search" method="POST"> 
+  {{!-- <label class="search__label">Search For A new </label> --}}
   <input class= "search__input" type="text" name="query" required value ="" placeholder="search for new"/>
   <button class="search__btn" type="submit"> search </button>
 </form>
 
 {{#each result}}
 
-<div>
-  <h4>{{this.title}}</h4>
-  <p>{{this.description}}</p>
-  <p>{{this.publishedAt}}</p>
-  <div><img src="{{this.urlToImage}}" alt="new" ></div>
-  <div><a href="{{this.url}}">Read more</a></div>
+<div class= "search__div">
+  <h4 class= "search__title">{{this.title}}</h4>
+  <p class= "search__description">{{this.description}}</p>
+  <p class= "search__publishedAt"> Published At: {{this.publishedAt}}</p>
+  <div class= "search__imgDiv"><img class= "search__img" src="{{this.urlToImage}}" alt="new" ></div>
+  <div class= "search__hrefDiv"><a class= "search__href" href="{{this.url}}" target="_blank">Read more</a></div>
 </div> 
- 
+
 {{/each}}
 
 
