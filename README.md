@@ -65,6 +65,8 @@ to test our project with its test step by step and we add API key to it .
 we use travis for cI to check our project with the test to be sure from our work .
 ![Screenshot](public/images/travisCheck.png)
 
+### Code Coverage: 
+we implement code coverage by using nyc to track our test coverage and got 90.7% for stmts & lines.  
 
 ## Used API :
 
