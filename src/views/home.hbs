@@ -1,8 +1,8 @@
 {{> header }}
 <form class= "search__form" action="/search" method="POST"> 
   {{!-- <label class="search__label">Search For A new </label> --}}
-  <input class= "search__input" type="text" name="query" required value ="" placeholder="search for new"/>
-  <button class="search__btn" type="submit"> search </button>
+  <input class= "search__input" type="text" aria-label="news" name="query" required value ="" placeholder="search for new"/>
+  <button class="search__btn" aria-label="search" type="submit"> search </button>
 </form>
 
 {{#each result}}
