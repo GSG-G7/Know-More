@@ -4,11 +4,6 @@ const supertest = require('supertest');
 
 const app = require('../src/app');
 
-test('inital test', (t) => {
-  t.equal(2, 2, 'should be 2');
-  t.end();
-});
-
 test('test success search', (t) => {
   supertest(app)
     .get('/')
