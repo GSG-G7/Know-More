@@ -27,3 +27,19 @@ test('test for search', (t) => {
       t.end();
     });
 });
+
+test('test for client error 404', (t) => {
+  supertest(app)
+    .get('/err')
+    .expect(404)
+    .expect('Content-Type', /html/)
+    .end((err, res) => {
+      if (err) {
+        t.error(err);
+        t.end();
+      } else {
+        t.equal(res.clientError, true, 'should be client error');
+        t.end();
+      }
+    });
+});
